@@ -2,7 +2,9 @@
 def uppercase(istr):
     result = ""
     for i in istr:
-        if 'a' <= i <= 'z':
-            result += print("{}".format(chr(ord(i) - 32))
-    return result
+        if ord('a') <= ord(i) <= ord('z'):
+            result += print("{}".format(chr(ord(i) - 32)
+        else:
+            result += i
+    print("{}".format(result))
 
