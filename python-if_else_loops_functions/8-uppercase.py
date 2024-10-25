@@ -4,7 +4,5 @@ def uppercase(istr):
     for i in istr:
         if 'a' <= i <= 'z':
             result += print("{}".format(chr(ord(i) - 32))
-        else:
-            result += i
     return result
 
