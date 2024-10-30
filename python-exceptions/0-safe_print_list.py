@@ -11,4 +11,5 @@ def safe_print_list(my_list=[], x=0):
         print("put x as number")
     except NameError:
         print("try again")
-    print(x)    
+    print()
+    print(count)
