@@ -3,4 +3,4 @@ def safe_print_integer(value):
     try:
         print("{:d}".format(value))
     except TypeError:
-        print("please enter a digit")
+        return False
