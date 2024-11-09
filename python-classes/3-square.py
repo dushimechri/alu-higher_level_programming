@@ -14,4 +14,4 @@ class Square:
         self.__size = size  # Private instance attribute
     def area(self):
         """Public instance method that returns the area of the square."""
-        return self._size ** 2 # Area = size squared
+        return self.__size ** 2 # Area = size squared
