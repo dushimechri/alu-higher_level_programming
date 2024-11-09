@@ -1,10 +1,9 @@
 #!/usr/bin/python3
+"""Module that defines a square."""
 
-"""we create claa"""
 
 class Square:
-    """"this difines class with size"""
-    def __init__(self,size):
-    """Instantiation """
-    self._size = size
-        pass
+    """A class that defines a square by its size."""
+    def __init__(self, size):
+        """Instantiation with size."""
+        self.__size = size  # Private instance attribute
