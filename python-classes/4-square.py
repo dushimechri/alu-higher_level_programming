@@ -6,6 +6,7 @@ class Square:
     """A class that defines a square by its size."""
 
     def __init__(self, size=0):
+        """Instantiation with optional size."""
         self.size = size  # Use the setter to validate the initial size
 
     @property
