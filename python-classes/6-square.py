@@ -5,10 +5,9 @@
 class Square:
     """A class that defines a square by its size."""
 
-    def __init__(self, size=0, position=(0, 0)):
+    def __init__(self, size=0):
         """Instantiation with optional size."""
         self.size = size  # Use the setter to validate the initial size
-        self.position = position   # Use the setter to validate the initial size
 
     @property
     def size(self):
@@ -24,21 +23,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value  # Private instance attribute
 
-      @property
-    def position(self):
-        """Getter for the size property."""
-        return self.__position
-
-    @size.setter
-    def position(self, value):
-        """Setter for the size property."""
-        if isinstance(value, tuple) and len(value) == 2:
-            if all(isinstance(i, int) and i > 0 for i in value):
-                self._position = value
-            else:
-                raise TypeError("position must be a tuple of 2 positive integers")
-        self.__size = value  # Private instance attribut
-
     def area(self):
         """Public instance method that returns the area of the square."""
         return self.__size ** 2  # Area = size squared
@@ -47,10 +31,6 @@ class Square:
         """Public instance method that prints the square with '#'."""
         if self.__size == 0:
             print("")  # Print an empty line if size is 0
-        # Print new lines for the vertical position
-        for _ in range(self.__position[1]):
-            print("")  # Create vertical space
-
-        # Print the square
-        for _ in range(self.__size):
-            print(" " * self.__position[0] + "#" * self.__size  
+        else:
+            for _ in range(self.__size):
+                print("#" * self.__size)  # Print a row of '#' characters 
