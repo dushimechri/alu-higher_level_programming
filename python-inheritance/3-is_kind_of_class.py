@@ -10,7 +10,7 @@ def is_kind_of_class(obj, a_class):
     from, the specified class; otherwise False.
     Args:
         obj: The object to check.\
-        a_class: The class to match the 
+        a_class: The class to match the
         object against.
 
     Returns:
