@@ -1,9 +1,21 @@
 #!/usr/bin/python3
-"""writing a function that reads a file in which i will be using open command to open a file an also with statement"""
+"""
+This module provides file handling utilities.
+
+
+It includes a function that reads a text file and\
+        prints its contents to stdout.
+"""
 
 
 def read_file(filename=""):
-"""now let's pass the code down below"""
+ """
+    Reads a text file (UTF8) and prints its content to stdout.
+
+    Args:
+        filename (str): The name of the file\
+                to read. Defaults to an empty string.
+    """
 
     with open(filename, 'r',encording='UTF-8') as f:
         return f.read()
