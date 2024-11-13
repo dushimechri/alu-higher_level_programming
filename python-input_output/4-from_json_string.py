@@ -1,21 +1,22 @@
 #!/usr/bin/python3
 """
-This module provides a function to return the\
-        JSON representation of an object.
+This module provides a function to parse a JSON\
+        string into a Python object.
 """
 
 
 import json
 
 
-def to_json_string(my_obj):
+def from_json_string(my_str):
     """
-    Returns returns an object represented by a JSON string
+    Returns a Python object represented by a JSON string.
 
     Args:
-        my_obj: The object to serialize to JSON.
+        my_str (str): The JSON string to be converted.
 
     Returns:
-        str: The JSON representation of the object.
+        object: The Python data structure represented\
+                by the JSON string.
     """
-    return json.load(my_obj)
+    return json.loads(my_str)
