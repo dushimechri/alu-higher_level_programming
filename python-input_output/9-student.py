@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+This module deal with classes to ensure Student to JSON
+"""
+
+
 class Student:
     """Class to define a student with first_name, last_name, and age."""
 
