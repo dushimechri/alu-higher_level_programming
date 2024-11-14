@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-"""
-A script that adds all command line arguments to a Python list,\
-        and saves them in a file as a JSON representation.
-"""
-
-
+"""script that adds all arguments to a Python list and save them to a file."""
 import sys
 
 
