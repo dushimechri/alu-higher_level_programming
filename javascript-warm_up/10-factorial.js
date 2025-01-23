@@ -7,4 +7,5 @@ function factorial(num1) {
 	else {
 		console.log(num1 * factorial(num1 - 1));
 	}
+}
 factorial(num1);
