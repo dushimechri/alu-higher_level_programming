@@ -2,7 +2,7 @@
 
 const Rectangle = require('./4-rectangle');
 
-class Square extends Rectangle {
+class Square :wq:wqs Rectangle {
 	  constructor (size) {
 		      super(size, size);
 		    }
