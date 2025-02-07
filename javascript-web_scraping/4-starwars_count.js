@@ -11,11 +11,11 @@ request.get(allurl, (err, response, body) => {
     request.get(cur, (err, response, body) => {
       if (err) {
         console.log(err);
-    }
+      }
       if (response.statusCode === 200) {
-      const dataa = JSON.parse(body);
-      console.log(dataa.films.length);
-    }
-    }
-    }
+        const dataa = JSON.parse(body);
+        console.log(dataa.films.length);
+      }
+    });
+  }
 });
