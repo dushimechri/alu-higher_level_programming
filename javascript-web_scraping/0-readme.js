@@ -6,7 +6,7 @@ const erroe_Object = {code: 'ENOENT',
   errno: -2,
   syscall: 'open',
   path: 'doesntexist'}
-fs.open('argvs', 'utf-8', (err, data) => {
+fs.open('argvs', 'r', (err, data) => {
   if (err){
     console.log(erroe_Object);
   }
