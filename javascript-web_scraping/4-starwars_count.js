@@ -12,7 +12,7 @@ request.get(allurl, (err, response, body) => {
       if(film.characters.includes("https://swapi-api.alx-tools.com/api/people/18/")) {
         count += 1;
       }
-    }
+    });
   }
     console.log(count);
     
