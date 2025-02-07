@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const fs = require('fs');
-const argvs = argv[0];
+const argvs = process.argv[2];
 const erroe_Object = {code: 'ENOENT',
   message: 'no such file or directory, open \'doesntexist\'',
   errno: -2,
